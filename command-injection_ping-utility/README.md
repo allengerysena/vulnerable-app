@@ -9,8 +9,12 @@ Build docker image.
 sudo docker build -t command-injection_ping-utility .
 ```
 
-Run container on port 5678 (can be changed)
+Run container on port 5678 (can be changed).
 
 ```sh
 sudo docker run -d -p 5678:80 command-injection_ping-utility
 ```
+
+Preview.
+
+![image](https://github.com/allengerysena/vulnerable-app/assets/44354273/7ccb8dc4-50cf-4805-840b-9aadb690b9c2)
