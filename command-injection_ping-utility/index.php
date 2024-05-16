@@ -34,6 +34,9 @@
             border: 1px solid #ccc;
             border-radius: 4px;
         }
+        input[type="text"]:invalid {
+            border-color: red;
+        }
         input[type="submit"] {
             padding: 10px;
             font-size: 16px;
@@ -60,7 +63,7 @@
         <h1>Ping Utility</h1>
         <form method="POST" action="">
             <label for="ip">Enter IP Address:</label>
-            <input type="text" id="ip" name="ip" placeholder="e.g. 8.8.8.8" required>
+            <input type="text" id="ip" name="ip" placeholder="e.g. 8.8.8.8" pattern="^(\d{1,3}\.){3}\d{1,3}$" required title="the example is 8.8.8.8">
             <input type="submit" name="Submit" value="Ping">
         </form>
 
